@@ -186,3 +186,16 @@ already match the phantom orientation and therefore are not rotated.
 <object type="text/html" data="../assets/use-custom-coil-sensitivity-maps/simulated_mrd_sense.html" style="width:100%;height:520px;"></object>
 </div>
 ```
+
+## Cardiac MOLLI
+
+Sensitivity maps from the fully sampled `openMOLLIorig` scan are registered to
+the accelerated `R=2` product MOLLI data. Direct reconstruction retains the
+two-fold aliasing; `multiCoil` unfolds the anatomy.
+
+```@raw html
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1rem;">
+<object type="text/html" data="../assets/use-custom-coil-sensitivity-maps/cardiac_molli_direct.html" style="width:100%;height:520px;"></object>
+<object type="text/html" data="../assets/use-custom-coil-sensitivity-maps/cardiac_molli_multi_coil.html" style="width:100%;height:520px;"></object>
+</div>
+```
